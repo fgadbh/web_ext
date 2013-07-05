@@ -164,10 +164,10 @@ class DB_Functions {
 	
 	public function getAppId($regId) {
 		$result = mysql_query ("SELECT app_id FROM " . USER_TABLE . " WHERE gcm_regid = '" . $regId . "'" );
-		if ($result)
-			return mysql_fetch_array($result);
+		if (isset($result))
+			return mysql_fetch_row($result)[0];
 		else
-			return - 1;
+			return -1;
 	}
 	
 	public function getAppIdByMail($email) {
