@@ -11,4 +11,5 @@ define("DB_DATABASE", "web_ext");
  */
 define("GOOGLE_API_KEY", "AIzaSyBzG887annN9_tBLC4tjh34X42ccM9lYNo");
 if (!isset($dateformat))  $dateformat = "j.n.y";
+echo 'no, yes, please';
 ?>
